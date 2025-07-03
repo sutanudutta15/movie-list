@@ -99,9 +99,9 @@ Edit the following lines in app.py:
 app.config['MAIL_USERNAME'] = 'your_email@gmail.com'
 app.config['MAIL_PASSWORD'] = 'your_app_password'
 ```
-```bash
-🔌API configuration
 
+🔌API configuration
+```bash
 ✅ Step-by-Step Guide:
 1. Go to the TMDB Website
     Open your browser and visit:
