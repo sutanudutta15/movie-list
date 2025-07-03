@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+<table class="table">
+
+  <tbody>
+  {% for item in lists: %}
+    <tr class="table">
+      <td><img src="https://image.tmdb.org/t/p/w500{{ item['poster_path'] }}" class="img-thumbnail" alt="movie poster"></td>
+      <td><h3>{{ item['original_title'] }}</h3>
+        <br><br>Rating: {{ item['vote_average'] }}
+        <br><br>{{ item['overview'] }}
+        <br><br>
+        <a class="btn btn-primary" href="{{ url_for('addwatched', id=item['id']) }}" role="button">Already watched</a>
+        <br>
+        <br>
+        <a class="btn btn-primary" href="{{ url_for('addwatchlist', id=item['id']) }}" role="button">Add to watchlist</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% include "footer.html" %}

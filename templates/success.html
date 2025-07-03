@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Password successfully changed</title>
+    <meta http-equiv="refresh" content="5;url={{ url_for('home') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #d4edda;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .success {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="success">
+    <h2>Password updated successfully.</h2>
+      <p>You will be redirected shortly and logged in with your new password</p>
+  </div>
+</body>
+</html>
