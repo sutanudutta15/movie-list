@@ -67,19 +67,20 @@ movie-list/
 ```bash
 git clone https://github.com/sutanudutta15/movie-list.git
 cd movie-list
-
+```
 🐍 2. Create Virtual Environment (optional)
-
+```bash
 python -m venv venv
 source venv/bin/activate    # Linux/macOS
 venv\Scripts\activate       # Windows
-
+```
 📦 3. Install Dependencies
-
+```
 pip install -r requirements.txt
-
+```
 
 📧 Email Configuration
+```bash
 This app uses Gmail SMTP to send password reset links.
 
 
@@ -97,8 +98,8 @@ Edit the following lines in app.py:
 
 app.config['MAIL_USERNAME'] = 'your_email@gmail.com'
 app.config['MAIL_PASSWORD'] = 'your_app_password'
-
-
+```
+```bash
 🔌API configuration
 
 ✅ Step-by-Step Guide:
@@ -159,11 +160,17 @@ Edit the following line in app.py:
 
 
 API_KEY = "your_api_key"
-
+```
 
 
 ▶️ Run the App
-
+```bash
 python app.py
 
 Visit http://localhost:5000 in your browser.
+```
+
+## Tutorial
+```bash
+https://drive.google.com/file/d/1v6MqR6pSHhO134zWIGYltt0W6yJiShDZ/view
+```
